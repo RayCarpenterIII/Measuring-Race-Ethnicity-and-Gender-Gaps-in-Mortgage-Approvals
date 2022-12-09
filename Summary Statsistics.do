@@ -13,8 +13,8 @@ replace counts = 3 if counts > 500 & counts <= 1000
 replace counts = 4 if counts > 1000 & counts <= 5000
 replace counts = 5 if counts > 5000 & counts <= 10000
 
-* Reset Index
-drop index
+*** Reset Index
+drop index 
 gene index=_n
 
 * Encode str to num to be prepped to be transformed into dummy variables.
